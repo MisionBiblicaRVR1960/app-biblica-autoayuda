@@ -4,56 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecosistema Bíblico RVR1960 - Autoayuda Familiar</title>
-    <script src="https://tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #334155;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        main {
+            max-width: 450px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1e3a8a;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+        .sub {
+            color: #4f46e5;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin: 0;
+        }
+        section {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+        .title-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .title-box h2 {
+            font-size: 14px;
+            color: #1e3a8a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .versiculo {
+            font-style: italic;
+            font-size: 18px;
+            color: #334155;
+            font-family: Georgia, serif;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-<body class="bg-slate-50 min-h-screen text-slate-800 font-sans">
-    <!-- Contenedor Principal -->
-    <main class="max-w-md mx-auto px-4 py-8">
+<body>
+
+    <main>
         
-        <!-- Encabezado de la App -->
-        <header class="text-center mb-8">
-            <h1 class="text-2xl font-bold text-indigo-900 tracking-tight">Pan de Vida Diario</h1>
-            <p class="text-xs text-indigo-600 mt-1 uppercase tracking-wider font-semibold">Basado fielmente en la Biblia Reina-Valera 1960</p>
+        <header>
+            <h1>Pan de Vida Diario</h1>
+            <p class="sub">Basado fielmente en la Biblia Reina-Valera 1960</p>
         </header>
 
-        <!-- Bloque 1: Versículo Diario -->
-        <section class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50 mb-6 transition-all">
-            <div class="flex items-center gap-2 mb-3">
-                <span class="text-lg">📖</span>
-                <h2 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">Versículo del Día</h2>
+        <section>
+            <div class="title-box">
+                <span>📖</span>
+                <h2>Versículo del Día</h2>
             </div>
-            <p id="txt-versiculo" class="text-lg italic text-slate-700 leading-relaxed font-serif">"Cargando la palabra de Dios..."</p>
+            <p id="txt-versiculo" class="versiculo">"Cargando la palabra de Dios..."</p>
         </section>
 
-        <!-- Bloque 2: Oración por los Hijos -->
-        <section class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50 mb-6">
-            <div class="flex items-center gap-2 mb-3">
-                <span class="text-lg">🙏</span>
-                <h2 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">Oración Guiada para tus Hijos</h2>
+        <section>
+            <div class="title-box">
+                <span>🙏</span>
+                <h2>Oración Guiada para tus Hijos</h2>
             </div>
-            <p id="txt-oracion" class="text-slate-600 text-sm leading-relaxed">Generando oración basada en la promesa de hoy...</p>
+            <p id="txt-oracion">Generando oración basada en la promesa de hoy...</p>
         </section>
 
-        <!-- Bloque 3: Devocional de Esperanza -->
-        <section class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50 mb-6">
-            <div class="flex items-center gap-2 mb-3">
-                <span class="text-lg">💡</span>
-                <h2 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">Reflexión de Sabiduría</h2>
+        <section>
+            <div class="title-box">
+                <span>💡</span>
+                <h2>Reflexión de Sabiduría</h2>
             </div>
-            <p id="txt-devocional" class="text-slate-600 text-sm leading-relaxed">Preparando el mensaje diario...</p>
+            <p id="txt-devocional">Preparando el mensaje diario...</p>
         </section>
 
-        <!-- Pie de página informativo -->
-        <footer class="text-center text-xs text-slate-400 mt-12">
+        <footer>
             <p>© 2026 Ecosistema Bíblico Familiar</p>
-            <p class="mt-1">Llevando verdad, fe y esperanza a los hogares.</p>
+            <p>Llevando verdad, fe y esperanza a los hogares.</p>
         </footer>
 
     </main>
 
-    <script>
-        // Este bloque se encargará de conectar automáticamente los datos de Google Sheets más adelante.
-        console.log("Estructura visual de la App lista.");
-    </script>
 </body>
 </html>
